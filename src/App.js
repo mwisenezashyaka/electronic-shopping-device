@@ -19,7 +19,7 @@ function App() {
         {/* ... existing nav content ... */}
         <div className="logo-container">
           <img src={logo} className="App-logo" alt="logo" />
-          <span className="brand-name">YOU&I ELECTRONIC SHOP</span>
+          <span className="brand-name">YOU&I DRIGO ELECTRONIC SHOP</span>
         </div>
           {/* Added Search Bar */}
           <div className="search-container">
@@ -34,10 +34,55 @@ function App() {
           <li><a href="#products">Products</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
+          <div className="auth-buttons">
+      <button className='login'>Login</button>
+      <button className='sign'>Sign Up</button>
+    </div>
+
         </ul>
-
-
       </nav>
+      <div className="main-content">
+  {/* New Shop Details Section */}
+  <div className="shop-details">
+    <div className="shop-hero">
+      <h2>Welcome to YOU&I ELECTRONIC SHOP</h2>
+      <p>Rwanda's Premier Destination for Cutting-Edge Technology</p>
+    </div>
+    
+    <div className="usp-grid">
+      <div className="usp-card">
+        <h3>🛡️ Certified Quality</h3>
+        <p>All products come with official manufacturer warranties</p>
+      </div>
+      <div className="usp-card">
+        <h3>🚚 Same-Day Delivery</h3>
+        <p>Free delivery within Kibuye for orders above $300</p>
+      </div>
+      <div className="usp-card">
+        <h3>💳 Flexible Payments</h3>
+        <p>Mobile money, credit cards, or installment plans</p>
+      </div>
+      <div className="usp-card">
+        <h3>📞 24/7 Support</h3>
+        <p>Expert technical assistance whenever you need it</p>
+      </div>
+    </div>
+
+    <div className="featured-brands">
+      <h3>Shop With Us  Top Brands:</h3>
+      <div className="brands-grid">
+      <img src="/hp.png" alt="HP" />
+        <img src="/samsung.png" alt="Samsung" />
+        <img src="/apple.jfif" alt="Apple" />
+        <img src="/xx.png" alt="Xiaomi" />
+        <img src="/tecno.png" alt="HP" />
+        <img src="/pixel.png" alt="HP" />
+        <img src="/lenovo.jfif" alt="HP" />
+        <img src="/sony.png" alt="HP" />
+      </div>
+    </div>
+  </div>
+  </div>
 
       {/* Rest of your existing content */}
       <div className="main-content">
@@ -120,7 +165,52 @@ function App() {
         </div>
       </div>
 
+      {/* Footer */}
+      <footer className="sitefooter">
+        <div className="footer-content">
+          <div className="footer-section">
+            <h4>Visit Our Store</h4>
+            <p>123 Tech Avenue</p>
+            <p>Rufungo Street, Kibuye</p>
+            <p>Rwanda</p>
+          </div>
 
+          <div className="footer-section">
+            <h4>Connect With Us</h4>
+            <div className="social-media">
+              <a href="https://facebook.com/julesdrigo" target="_blank" rel="noopener noreferrer">
+                <img src="/facebook.png" alt="Facebook" />
+              </a>
+              <a href="https://twitter.com/julesdrigo" target="_blank" rel="noopener noreferrer">
+                <img src="/x.png" alt="Twitter" />
+              </a>
+              <a href="https://instagram.com/julesdrigo" target="_blank" rel="noopener noreferrer">
+                <img src="/instagram.png" alt="Instagram" />
+              </a>
+            </div>
+          </div>
+
+          <div className="footer-section">
+            <h4>Contact Us</h4>
+            <p>📞 (+250) 794673382</p>
+            <p>✉️ info@drigo-electronics.com</p>
+            <p>🕒 Mon-Sat: 9AM - 8PM EST</p>
+          </div>
+        </div>
+
+        <div className="footer-section">
+            <h4>OUR PARTENERS</h4>
+            <p>23 ONLINE SHOP</p>
+            <p>📞 (+250) 790011137</p>
+            <p>@MUHETOO</p>
+            <p>🕒 Mon-Sat: 9AM - 8PM EST</p>
+          </div>
+
+
+        <div className="footer-bottom">
+          <p>© 2023 YOU&I ELECTRONIC SHOP. All rights reserved.</p>
+        </div>
+      </footer>
       </div>
     </div>
   );
